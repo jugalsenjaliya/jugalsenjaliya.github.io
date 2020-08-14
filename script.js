@@ -4,25 +4,25 @@ function indexvalidate(){
 	var dat2 = new Date();
 
 	if(document.index.source.selectedIndex==0){
-		sou.style.border = "solid 1px #b30000";
+		sou.style.border = "solid 2px #b30000";
 		document.getElementById("source").innerHTML = "** Enter your Source";
 		return false;
 	}
 
 	else if(document.index.destination.selectedIndex==0){
-		des.style.border = "solid 1px #b30000";
+		des.style.border = "solid 2px #b30000";
 		document.getElementById("destination").innerHTML = "** Enter your Destination";
 		return false;
 	}
 
 	else if(dat.value == ""){
-		datee.style.border = "solid 1px #b30000";
+		datee.style.border = "solid 2px #b30000";
 		document.getElementById("dd").innerHTML = "** Enter Date";
 		return false;
 	}
 
 	else if(dat1.getTime() > dat2.getTime()){
-		datee.style.border = "solid 1px #b30000";
+		datee.style.border = "solid 2px #b30000";
 		document.getElementById("dd").innerHTML = "** Enter Valid Date";
 		return false;
 	}
@@ -34,13 +34,13 @@ function indexvalidate(){
 
 
 function checkbox1(){
-	sou.style.border = "solid 2px #33cc33";
+	sou.style.border = "solid 1px #33cc33";
 	document.getElementById("source").innerHTML = "";
 
-	des.style.border = "solid 2px #33cc33";
+	des.style.border = "solid 1px #33cc33";
 	document.getElementById("destination").innerHTML = "";
 
-	datee.style.border = "solid 2px #33cc33";
+	datee.style.border = "solid 1px #33cc33";
 	document.getElementById("dd").innerHTML = "";
 }
 
