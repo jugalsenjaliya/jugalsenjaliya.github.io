@@ -1,7 +1,8 @@
 function indexvalidate(){
 	var dat = document.querySelector('input[type="date"]');
-	var dat1 = new Date(dat);
-	var dat2 = new Date();
+	var q = new Date();
+     var date = new Date(q.getFullYear(),q.getMonth(),q.getDate());
+     var mydate = new Date(document.getElementById('datee').value);
 
 	if(document.index.source.selectedIndex==0){
 		sou.style.border = "solid 2px #b30000";
@@ -21,7 +22,7 @@ function indexvalidate(){
 		return false;
 	}
 
-	else if(dat1.getTime() > dat2.getTime()){
+	else if(date > mydate){
 		datee.style.border = "solid 2px #b30000";
 		document.getElementById("dd").innerHTML = "** Enter Valid Date";
 		return false;
